@@ -1,4 +1,4 @@
-name: tests.yml
+name: Tests
 on:
   push:
     branches:
@@ -6,7 +6,7 @@ on:
 
 jobs:
   test-win:
-    runs-on: windows-lastest
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-python@v6
