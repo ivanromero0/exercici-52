@@ -6,7 +6,7 @@ on:
 
 jobs:
   test-win:
-   runs-on: windows-latest
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-python@v6
@@ -16,12 +16,12 @@ jobs:
 
   test-linux:
     runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v6
-        - uses: actions/setup-python@v6
-          with:
-            python-version: '3.13'
-        - run: python -m unittest -v
+     steps:
+       - uses: actions/checkout@v6
+       - uses: actions/setup-python@v6
+         with:
+           python-version: '3.13'
+       - run: python -m unittest -v
 
   test-mac:
     runs-on: macos-tatest
